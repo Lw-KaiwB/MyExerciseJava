@@ -28,4 +28,8 @@ public class Mugs {
         new Mugs(1);
         System.out.println("new Mugs(1) completed");
     }
+
+    public class MyMug{
+
+    }
 }

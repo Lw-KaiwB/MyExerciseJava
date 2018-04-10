@@ -26,4 +26,9 @@ public class Range {
         }
         return result;
     }
+    public class RangeOn{
+
+    }
 }
+
+
