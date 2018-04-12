@@ -1,3 +1,5 @@
+package com.kb.shape;
+
 import com.kb.unit.Print;
 
 public class CADSystem extends Shape {
@@ -40,54 +42,4 @@ public class CADSystem extends Shape {
     }
 }
 
-class Shape {
-    Shape(int i) {
-        Print.print("shape constructor"+" i="+i);
-    }
-
-    void dispose() {
-        Print.print("Shape dispose");
-    }
-
-}
-
-class Circle extends Shape {
-    Circle(int i) {
-        super(i);
-        Print.print("Drawing Circle");
-    }
-
-    void display() {
-        Print.print("Erasing Circle");
-        super.dispose();
-    }
-}
-
-class Triangle extends Shape {
-    Triangle(int i) {
-        super(i);
-        Print.print("Drawing Triangle");
-    }
-
-    void dispose() {
-        Print.print("Erasing Triangle");
-        super.dispose();
-    }
-}
-
-class Line extends Shape {
-    private int start, end;
-
-    Line(int start, int end) {
-        super(start);
-        this.start = start;
-        this.end = end;
-        Print.print("Draw line start=" + start + " end=" + end);
-    }
-
-    void dispose() {
-        Print.print("Erasing line start=" + start);
-        super.dispose();
-    }
-}
 
