@@ -10,7 +10,7 @@ interface ServiceFactory {
     Service getService();
 }
 
-class MyService1 implements Service {
+class MyService1 implements Service{
     @Override
     public void mothod1() {
         Print.print("MyService1 mothod1");
@@ -22,7 +22,7 @@ class MyService1 implements Service {
     }
 }
 
-class MyService2 implements Service {
+class MyService2 implements Service{
     @Override
     public void mothod1() {
         Print.print("MyService2 mothod1");
